@@ -3,7 +3,6 @@
 [![version](https://img.shields.io/npm/v/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
 [![minzipped size](https://img.shields.io/bundlephobia/minzip/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
 [![downloads](https://img.shields.io/npm/dt/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
-[![build](https://api.travis-ci.com/CharlesStover/use-update-layout-effect.svg)](https://travis-ci.com/CharlesStover/use-update-layout-effect/)
 
 `useUpdateLayoutEffect` is a React hook that mimics the behavior of
 `componentDidUpdate` in function components.
