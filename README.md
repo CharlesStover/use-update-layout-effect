@@ -1,11 +1,15 @@
-# useUpdateLayoutEffect [![version](https://img.shields.io/npm/v/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect) [![minzipped size](https://img.shields.io/bundlephobia/minzip/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect) [![downloads](https://img.shields.io/npm/dt/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect) [![build](https://api.travis-ci.com/CharlesStover/use-update-layout-effect.svg)](https://travis-ci.com/CharlesStover/use-update-layout-effect/)
+# useUpdateLayoutEffect
+
+[![version](https://img.shields.io/npm/v/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
+[![minzipped size](https://img.shields.io/bundlephobia/minzip/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
+[![downloads](https://img.shields.io/npm/dt/use-update-layout-effect.svg)](https://www.npmjs.com/package/use-update-layout-effect)
+[![build](https://api.travis-ci.com/CharlesStover/use-update-layout-effect.svg)](https://travis-ci.com/CharlesStover/use-update-layout-effect/)
 
 `useUpdateLayoutEffect` is a React hook that mimics the behavior of
 `componentDidUpdate` in function components.
 
-- [Install](#install)
-- [Use](#use)
-- [Sponsor](#sponsor)
+You may also like
+[`use-update-effect`](https://www.npmjs.com/package/use-update-effect).
 
 ## Install
 
@@ -42,10 +46,11 @@ the in-flight value when a _new_ controlled value is provided. This is useful
 when a controlled value may have more than one controlling component.
 
 ```javascript
+import { useState } from 'react';
 import useUpdateLayoutEffect from 'use-update-layout-effect';
 
 function MyComponent({ onChange, value }) {
-  const [localValue, setLocalValue] = React.useState(value);
+  const [localValue, setLocalValue] = useState(value);
 
   useUpdateLayoutEffect(() => {
     setLocalValue(value);
@@ -64,9 +69,3 @@ function MyComponent({ onChange, value }) {
   );
 }
 ```
-
-## Sponsor 💗
-
-If you are a fan of this project, you may
-[become a sponsor](https://github.com/sponsors/CharlesStover)
-via GitHub's Sponsors Program.
